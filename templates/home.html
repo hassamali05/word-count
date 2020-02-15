@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+</head>
+<body>
+	<h2>Bismillah</h2>
+	<h3>Welcome to word count website</h3>
+	<h4>My self {{ name }}</h4>
+	<a href="{% url 'about' %}">Want to know about website?</a>
+	<form action="{% url 'count' %}">
+		<p>Enter your text in this box and then press submit button</p>
+		<textarea name="fulltext" rows="15" cols="50"></textarea>
+		<br />
+		<input type="submit" name="Count" value="Count" />
+	</form>
+</body>
+</html>
